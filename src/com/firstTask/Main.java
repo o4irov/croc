@@ -1,10 +1,10 @@
-package com.company;
+package com.firstTask;
 
 /**
  * Javadoc
  * @autor o41rov
  * @version 17.0.2
- **/
+ */
 
 public class Main {
 
