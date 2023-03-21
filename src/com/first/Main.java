@@ -1,4 +1,4 @@
-package com.firstTask;
+package com.first;
 
 /**
  * Javadoc
