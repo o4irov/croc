@@ -1,4 +1,5 @@
 package fourth;
+
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -7,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Чтение из файла и подсчёт слов в нём
+ * Подсчёт слов в файле
  */
 
 public class Main {
@@ -27,15 +28,16 @@ public class Main {
         }
         return data;
     }
+
     public static void main(String[] args) {
         //обработка ошибки отсутствия пути к файлу в переменной командной строки
-        try{
+        try {
             //вызываем метод парсинга данных из файла в строку и заменяем лишние пробелы, переносы строк на один пробел
             String fileString = readFileToString(args).replaceAll("\\s+", " ");
             //разбиваем полученную строку на слова и находим его длину
             ArrayList<String> words = new ArrayList<>(List.of(fileString.split(" ")));
             System.out.println(words.size());
-        }catch (IllegalArgumentException e){
+        } catch (IllegalArgumentException e) {
             System.out.println(e.getMessage());
         }
     }
