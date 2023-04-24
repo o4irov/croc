@@ -1,0 +1,17 @@
+{
+  0: {
+    "name": "milk"
+  },
+  1: {
+    "name": "meat"
+  },
+  2: {
+    "name": "egg"
+  },
+  3: {
+    "name": "cheese"
+  },
+  4: {
+    "name": "butter"
+  }
+}
